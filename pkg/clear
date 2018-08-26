@@ -1,0 +1,1 @@
+rm -rf crowsecos-welcome-1.0.0-1-any.pkg.tar.xz  Crowsec-Welcome/ pkg/ src/ -rv

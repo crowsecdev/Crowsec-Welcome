@@ -1,0 +1,6 @@
+from os import system
+
+system("git add * -v")
+a = input("[commit]=>")
+system("git commit -m "+str(a))
+system("git push origin master")
