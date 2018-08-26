@@ -17,8 +17,9 @@ package() {
     install -d ${pkgdir}/etc/skel/.config/autostart
 
     cp -r ${srcdir}/Crowsec-Welcome/src/img/ "${pkgdir}/usr/share/Crowsec-Welcome/img/"
+    cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.py "${pkgdir}/usr/share/Crowsec-Welcome/"
 
-    cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.py "${pkgdir}/usr/bin/crowsec-welcome"
+    cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome-start.py "${pkgdir}/usr/bin/crowsec-welcome-start"
     chmod +x "${pkgdir}/usr/bin/crowsec-welcome"
 
     cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.desktop "${pkgdir}/etc/skel/.config/autostart/crowsec-welcome.desktop"
