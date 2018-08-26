@@ -20,8 +20,7 @@ package() {
     cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.py "${pkgdir}/usr/share/Crowsec-Welcome/"
 
     cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome-start.py "${pkgdir}/usr/bin/crowsec-welcome-start"
-    chmod +x "${pkgdir}/usr/bin/crowsec-welcome"
-
+    chmod +x "${pkgdir}/usr/bin/crowsec-welcome-start"
     cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.desktop "${pkgdir}/etc/skel/.config/autostart/crowsec-welcome.desktop"
     chmod +x "${pkgdir}/etc/skel/.config/autostart/crowsec-welcome.desktop"
 
