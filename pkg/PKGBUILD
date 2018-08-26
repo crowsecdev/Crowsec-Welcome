@@ -11,18 +11,18 @@ source=("git+$url.git")
 sha256sums=('SKIP')
 
 package() {
-    install -d ${pkgdir}/usr/share/crowsecos-welcome
+    install -d ${pkgdir}/usr/share/Crowsec-Welcome
     install -d ${pkgdir}/usr/share/applications
     install -d ${pkgdir}/usr/bin
     install -d ${pkgdir}/etc/skel/.config/autostart
 
-    cp -r ${srcdir}/crowsecos-welcome/src/img/ "${pkgdir}/usr/share/crowsecos-welcome/img/"
+    cp -r ${srcdir}/Crowsec-Welcome/src/img/ "${pkgdir}/usr/share/Crowsec-Welcome/img/"
 
-    cp -r ${srcdir}/crowsecos-welcome/src/crowsecos-welcome.py "${pkgdir}/usr/bin/crowsecos-welcome"
-    chmod +x "${pkgdir}/usr/bin/crowsecos-welcome"
+    cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.py "${pkgdir}/usr/bin/crowsec-welcome"
+    chmod +x "${pkgdir}/usr/bin/crowsec-welcome"
 
-    cp -r ${srcdir}/crowsecos-welcome/src/crowsecos-welcome.desktop "${pkgdir}/etc/skel/.config/autostart/crowsecos-welcome.desktop"
-    chmod +x "${pkgdir}/etc/skel/.config/autostart/crowsecos-welcome.desktop"
+    cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.desktop "${pkgdir}/etc/skel/.config/autostart/crowsec-welcome.desktop"
+    chmod +x "${pkgdir}/etc/skel/.config/autostart/crowsec-welcome.desktop"
 
-    cp -r ${srcdir}/crowsecos-welcome/src/crowsecos-welcome.desktop "${pkgdir}/usr/share/applications/crowsecos-welcome.desktop"
+    cp -r ${srcdir}/Crowsec-Welcome/src/crowsec-welcome.desktop "${pkgdir}/usr/share/applications/crowsec-welcome.desktop"
 }
